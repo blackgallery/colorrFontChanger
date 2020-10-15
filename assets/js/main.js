@@ -29,20 +29,7 @@ var colorPicker = new iro.ColorPicker("#demoWheel", {
         component: iro.ui.Wheel,
         options: {
         }
-      },
-  
-      {
-        component: iro.ui.Slider,
-        options: {
-          sliderType: 'red'
-        }
-      },
-      {
-        component: iro.ui.Slider,
-        options: {
-          sliderType: 'hue'
-        }
-      },
+      }
   
       
       // {
@@ -110,15 +97,13 @@ var colorPicker = new iro.ColorPicker("#demoWheel", {
     // ]
   });
   
-  
-  
    
   colorPicker.on('color:change', function( ) {
    
       
       var rgb = colorPicker.color.rgbString; 
   
-  var hsv = colorPicker.color.hsv; 
+        var hsv = colorPicker.color.hsv; 
   
       var x = document.querySelectorAll(".box");
    
