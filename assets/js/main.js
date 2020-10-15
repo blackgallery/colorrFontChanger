@@ -1,4 +1,10 @@
 
+//  font size changer
+
+
+
+//  colorPicker
+
 var colorPicker = new iro.ColorPicker("#demoWheel", {
     width: 290,
     height: 360,

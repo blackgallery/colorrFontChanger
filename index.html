@@ -31,14 +31,49 @@
 
       <div class="color_picker"> 
           <div class="wheel" id="demoWheel"></div> 
-      </div>
 
+
+          <div class="font_changer"> 
+            <p> Font size <span id="value"></span></p>
+            <input type="range" name="" min="1" max="100" value="20" class="range_slider" id="myrange"> 
+            <br> 
+            <p> Line Height <span id="value"></span></p>
+            <input type="range" name="" min="18" max="100" value="40" class="range_slider" id="linerange""> 
+            <br> 
+            <p> Paragraph spacing <span id="value"></span></p>
+            <input type="range" name="" min="0" max="10" value="1" class="range_slider" id="spacingrange"> 
+            <br>
+           
+            <br>
+            <span> Select Font Family </span>
+             <select name="Select Font" id="typo"> 
+             <option>fantasy</option>
+             <option>monospace</option>
+             <option>auto</option>
+             <option>cursive</option> 
+           </select>
+         </div>
+
+
+ 
+
+      </div>
+ 
+
+
+      <script>
+        function myFunction(selectTag) {
+          var listValue = selectTag.options[selectTag.selectedIndex].text;
+          document.getElementsByClassName("box").style.fontSize = listValue;
+        }
+      </script>
    
  
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.min.js"></script> 
 
         <script src="assets/js/color-picker.js"></script>
+        <script src="assets/js/font-change.js"></script>
 
         <script src="assets/js/main.js"></script>
     </body>
