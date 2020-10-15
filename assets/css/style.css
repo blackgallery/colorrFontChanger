@@ -106,8 +106,8 @@ a:hover { text-decoration: none }
     -webkit-appearance: none;
     appearance: none;
     border-radius: 50%; 
-    width: 30px;
-    height: 30px; 
+    width: 10px;
+    height: 10px; 
     cursor: pointer;
     border: 5px solid #373737;
     box-shadow: -407px 0 0 390px #ffd200;  
@@ -118,8 +118,8 @@ a:hover { text-decoration: none }
     appearance: none;
     border-radius: 50%;
     outline: none; 
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     background: #ffd200;
     cursor: pointer;
     border: 5px solid #373737;
