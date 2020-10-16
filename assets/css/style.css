@@ -184,5 +184,9 @@ select {
 @media only screen and (max-width: 767px) {
 }
 /* -----   Mobile Vertical Layout: 488px   -----*/
-@media only screen and (min-width: 488px) and (max-width: 767px) {
+@media only screen and (min-width: 488px) and (max-width: 659px) {
+    .color_picker { 
+        grid-column-gap: 20px; 
+        padding: 40px 20px;
+    } 
 }
