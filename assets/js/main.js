@@ -1,13 +1,9 @@
 
-//  font size changer
-
-
-
 //  colorPicker
 
 var colorPicker = new iro.ColorPicker("#demoWheel", {
-    width: 290,
-    height: 360,
+    width: 200,
+    height: 200,
     handleRadius: 8,
     handleUrl: null,
     // handleUrl: "#test",
@@ -98,25 +94,15 @@ var colorPicker = new iro.ColorPicker("#demoWheel", {
   });
   
    
-  colorPicker.on('color:change', function( ) {
-   
-      
+  colorPicker.on('color:change', function( ) {    
       var rgb = colorPicker.color.rgbString; 
-  
-        var hsv = colorPicker.color.hsv; 
-  
+      var hsv = colorPicker.color.hsv; 
       var x = document.querySelectorAll(".box");
    
       var i;
       for (i = 0; i < x.length; i++) {
         x[i].style.backgroundColor = rgb;
-      }     
-  
-      var i;
-      for (i = 0; i < x.length; i++) {
-        x[i].style.backgroundColor = hsv;
-      } 
-  
+      }      
   
   })
   

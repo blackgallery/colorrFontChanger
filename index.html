@@ -10,71 +10,115 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
         <link href="assets/css/owl.carousel.css" rel="stylesheet">
+
+        <link href="assets/css/aos.css" rel="stylesheet">
+
         <link href="assets/css/style.css" rel="stylesheet">
-        <link href="assets/css/responsive.css" rel="stylesheet">
+        <link href="assets/css/responsive.css" rel="stylesheet"> 
         
+
+        <!--Replace Your Color-->
+        <link rel="stylesheet" href="assets/css/colors/default-color.css">
+        <!--Replace Your Color Ends-->
+
+        <!-- Switcher Styles-->
+        <link rel="stylesheet" id="switcher-css" type="text/css" href="assets/css/switcher.css" media="all" />
+        <!-- END Switcher Styles -->
+        
+        <link rel="alternate stylesheet" type="text/css" href="assets/css/colors/green.css" title="color1" media="all" />
+        <link rel="alternate stylesheet" type="text/css" href="assets/css/colors/black.css" title="color2" media="all" />
+        <link rel="alternate stylesheet" type="text/css" href="assets/css/colors/orange.css" title="color3" media="all" />
+
+        <!-- END Template Color Demo Examples -->
+
+
     </head>
     <body>
-<!--Start Clients Review-->
-      <div class="section-one">
+      <!--Start    -->
+      <div class="section-one" >
           <div class="container">
               <div class="row"> 
-                <div class="box box1"> “The purpose of our lives is to be happy.” — Dalai Lama</div>
-                <div class="box box2"> “Life is what happens when you’re busy making other plans.” — John Lennon</div>
-                <div class="box box3"> “Get busy living or get busy dying.” — Stephen King</div>
-                <div class="box box4"> “You only live once, but if you do it right, once is enough.” — Mae West</div>
-                <div class="box box5">“Not how long, but how well you have lived is the main thing.” — Seneca </div>
-                <div class="box box6"> “In order to write about life first you must live it.”– Ernest Hemingway</div>
+                  <div class="box box1" data-aos="fade-left" data-aos-duration="1000"> 
+                    “The purpose of our lives is to be happy.” — Dalai Lama
+                  </div>
+                  <div class="box box2" data-aos="fade-up" data-aos-duration="1000"> 
+                    “Life is what happens when you’re busy making other plans.” — John Lennon
+                  </div>
+                  <div class="box box3" data-aos="fade-right" data-aos-duration="1000"> “Get busy living or get busy dying.” — Stephen King
+                  </div>
+                  <div class="box box4" data-aos="flip-up" data-aos-duration="1000"> 
+                    “You only live once, but if you do it right, once is enough.” — Mae West
+                  </div>
+                  <div class="box box5" data-aos="fade-down" data-aos-duration="1000">
+                    “Not how long, but how well you have lived is the main thing.” — Seneca
+                  </div>
+                  <div class="box box6" data-aos="flip-down" data-aos-duration="1000"> 
+                    “In order to write about life first you must live it.”– Ernest Hemingway
+                  </div>
               </div>
           </div><!-- container -->
       </div><!--End   Section-->
-
-      <div class="color_picker"> 
-          <div class="wheel" id="demoWheel"></div> 
-
-
-          <div class="font_changer"> 
-            <p> Font size <span id="value"></span></p>
-            <input type="range" name="" min="1" max="100" value="20" class="range_slider" id="myrange"> 
-            <br> 
-            <p> Line Height <span id="value"></span></p>
-            <input type="range" name="" min="18" max="100" value="40" class="range_slider" id="linerange""> 
-            <br> 
-            <p> Paragraph spacing <span id="value"></span></p>
-            <input type="range" name="" min="0" max="10" value="1" class="range_slider" id="spacingrange"> 
-            <br>
-           
-            <br>
-            <span> Select Font Family </span>
-             <select name="Select Font" id="typo"> 
-             <option>fantasy</option>
-             <option>monospace</option>
-             <option>auto</option>
-             <option>cursive</option> 
-           </select>
-         </div>
-
-
  
 
+      <div class="color_picker">  
+        <!-- Color PIcker -->
+        <div class="wheel" id="demoWheel"></div>  
+        <!-- Font Changer -->
+        <div class="font_changer"> 
+          <p> Font size <span id="value"></span></p>
+          <input type="range" name="" min="1" max="100" value="20" class="range_slider" id="myrange"> 
+          <br> <br> 
+          <p> Line Height <span id="value"></span></p>
+          <input type="range" name="" min="18" max="100" value="40" class="range_slider" id="linerange""> 
+          <br> <br> 
+          <p> Paragraph spacing <span id="value"></span></p>
+          <input type="range" name="" min="0" max="10" value="1" class="range_slider" id="spacingrange"> 
+          <br><br>  
+          <br>
+          <span> Select Font Family </span>
+            <select name="Select Font" id="typo"> 
+            <option>fantasy</option>
+            <option>monospace</option>
+            <option>auto</option>
+            <option>cursive</option> 
+          </select>
+        </div> 
+    </div> <!--End sIDEBAR-->
+
+
+    <!-- START : Switcher 
+    ========================================-->
+    <div class="demo_changer">
+      <div class="demo-icon"><i>&omid; </i> </div>
+      <div class="form_holder"> 
+      <div class="layout_styles"> 
+        <p>CHOOSE YOUR COLOR</p> 
+        <div class="predefined_styles">
+          <a href="" rel="color1" class="styleswitch"> <span class="green"></span> </a>
+          <a href="" rel="color2" class="styleswitch"> <span class="black"></span> </a>	 
+          <a href="" rel="color3" class="styleswitch"> <span class="orange"></span></a>
+        </div> 
+        <span><a rel="tag" class="styleswitch" href="?default=true">RESET STYLE</a></span> 
       </div>
+    </div>
+    <!-- END Switcher 
+    ========================================-->
+
  
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> 
 
+    <script src="assets/js/color-picker.js"></script>
+    <script src="assets/js/font-change.js"></script> 
 
-      <script>
-        function myFunction(selectTag) {
-          var listValue = selectTag.options[selectTag.selectedIndex].text;
-          document.getElementsByClassName("box").style.fontSize = listValue;
-        }
-      </script>
-   
- 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script> 
+    <!--fswit Switcher   -->
+    <script src="assets/js/fswit.js"></script>
+    <!--Animation  Element   -->
+    <script src="assets/js/aos.js"></script> 
+    <script>
+      AOS.init();
+    </script>
+    <script src="assets/js/main.js"></script>
 
-        <script src="assets/js/color-picker.js"></script>
-        <script src="assets/js/font-change.js"></script>
-
-        <script src="assets/js/main.js"></script>
     </body>
 </html>

@@ -1,22 +1,30 @@
 /* Base CSS */
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700|Roboto');
+
 .alignleft {
     float: left;
     margin-right: 15px;
 }
+
 .alignright {
     float: right;
     margin-left: 15px;
 }
+
 .aligncenter {
     display: block;
     margin: 0 auto 15px;
 }
-a:focus { outline: 0 solid }
+
+a:focus {
+    outline: 0 solid
+}
+
 img {
     max-width: 100%;
     height: auto;
 }
+
 h1,
 h2,
 h3,
@@ -27,10 +35,14 @@ h6 {
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
 }
+
 body {
     font-family: 'Roboto', sans-serif;
 }
-a:hover { text-decoration: none }
+
+a:hover {
+    text-decoration: none
+}
 
 
 /* css start */
@@ -42,22 +54,23 @@ a:hover { text-decoration: none }
 }
 
 
- .section-one {
-    grid-template-columns:20vw auto 
-  }
+.section-one {
+    grid-template-columns: 15vw auto
+}
 
-  .section-one .container {
-    grid-column-start:2;
-  }
+.section-one .container {
+    grid-column-start: 2;
+}
+
 .section-one .row {
     display: grid;
     grid-gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-template-rows: repeat(2, 1fr);
-    grid-auto-rows: 1fr;  
-  }
+    grid-auto-rows: 1fr;
+}
 
-  .box {
+.box {
     background: #3d97f7;
     color: #fff;
     display: grid;
@@ -66,57 +79,60 @@ a:hover { text-decoration: none }
     padding: 70px 50px;
     text-align: center;
     font-size: 20px;
-  }
-  .section-one .row:before, .section-one .row:after {
-    display: none;
-  }
+}
 
- 
- /*  COlor Picker */
- .color_picker {
-     background: #ddd;
-    display: grid; 
+.section-one .row:before,
+.section-one .row:after {
+    display: none;
+}
+
+
+/*  COlor Picker */
+.color_picker {
+    background: #f1ebf9;
+    display: grid;
     justify-content: center;
-    padding-top: 100px; 
+    padding-top: 100px;
     position: fixed;
-    width: 20vw;
+    width: 15vw;
     top: 0;
-    height: 100vh; 
+    height: 100vh;
     overflow-x: hidden;
 }
 
 /* Range Slide */
-.font_changer{
+.font_changer {
     width: 100%;
 }
+
 .range_slider {
     height: 20px;
-    /* background: linear-gradient(90deg, rgb(214,214,214) 60%, rgb(214,214,214) 60%); */
     -webkit-appearance: none;
     border-radius: 50px;
-    outline: none;  
+    outline: none;
     background: #f2f2f2;
-    box-shadow: inset 0 0 20px #a28f8f;    
-    overflow: hidden; 
-}
- 
- 
-.range_slider::-webkit-slider-thumb { 
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 50%; 
-    width: 20px;
-    height: 20px; 
-    cursor: pointer;
-    border: 5px solid #fff;
-    box-shadow: -407px 0 0 390px #3d97f7;  
+    border: .5px solid #d1d1d1;
+    box-shadow: inset 0 0 20px #d1d1d1;
+    overflow: hidden;
 }
 
-.range_slider::-moz-range-thumb { 
+
+.range_slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     border-radius: 50%;
-    outline: none; 
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 5px solid #fff;
+    box-shadow: -407px 0 0 390px #3d97f7;
+}
+
+.range_slider::-moz-range-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50%;
+    outline: none;
     width: 10px;
     height: 10px;
     background: #3d97f7;
